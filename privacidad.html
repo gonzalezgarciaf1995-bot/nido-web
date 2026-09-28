@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Nido</title>
+<meta name="description" content="Política de privacidad de la aplicación Nido.">
+<link rel="icon" href="favicon-192.png">
+<style>
+  :root{--bg:#140e1c;--panel:#1f1530;--line:#3d2d52;--ink:#efe6fa;--muted:#b3a4c8;--gold:#d9b35c;--link:#c9a8ff}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(120% 60% at 50% 0,#2a1b3d 0,var(--bg) 70%) fixed;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{max-width:760px;margin:0 auto;padding:28px 20px 8px;display:flex;align-items:center;gap:14px}
+  header img{width:56px;height:56px;border-radius:14px;image-rendering:pixelated}
+  header a{color:var(--ink);text-decoration:none;font-weight:800;font-size:22px}
+  nav{margin-left:auto;display:flex;gap:14px;font-size:14px}
+  nav a{color:var(--muted);font-weight:600;font-size:14px}
+  main{max-width:760px;margin:0 auto;padding:8px 20px 40px}
+  h1{font-size:30px;line-height:1.2;margin:18px 0 6px;color:var(--gold)}
+  h2{font-size:20px;margin:30px 0 8px}
+  p,li{color:var(--ink)}
+  .muted{color:var(--muted);font-size:14px}
+  a{color:var(--link)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{text-align:left;vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--gold);font-weight:700}
+  .hero{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .hero img{width:150px;height:150px;border-radius:32px;image-rendering:pixelated;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  .hero div{flex:1;min-width:240px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  footer{max-width:760px;margin:0 auto;padding:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo-120.png" alt="Ícono de Nido" width="56" height="56">
+  <a href="index.html">Nido</a>
+  <nav><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></nav>
+</header>
+<main>
+
+<h1>Política de privacidad de Nido</h1>
+<p class="muted">Última actualización: 28 de septiembre de 2026</p>
+
+<p>Esta política explica qué información usa la aplicación <b>Nido</b> para Android, para qué la usa, con quién se comparte y cómo puede borrarla. Nido es un proyecto personal desarrollado por Fernando González García, responsable del tratamiento de los datos. Contacto: <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a>.</p>
+
+<h2>1. Resumen</h2>
+<div class="card">
+<ul>
+  <li><b>El contenido de sus conversaciones está cifrado de extremo a extremo.</b> Se cifra en su teléfono con una llave que solo tienen los dos teléfonos conectados. El desarrollador no puede leerlo.</li>
+  <li><b>Las fotos, videos y notas de voz se guardan cifrados en su propio Google Drive</b>, y Nido solo puede acceder a los archivos que ella misma creó.</li>
+  <li><b>No hay anuncios, no se venden datos y no se usan herramientas de análisis ni de rastreo.</b></li>
+</ul>
+</div>
+
+<h2>2. Información que usa la app</h2>
+<table>
+  <tr><th>Información</th><th>Para qué</th><th>Dónde se guarda</th></tr>
+  <tr><td>Mensajes, notas, listas, pizarras, calendario, estado de la mascota y demás contenido que ustedes crean</td><td>Que ambos teléfonos se mantengan sincronizados</td><td>Cifrado (AES-GCM) en la base de datos del servicio Supabase y en el almacenamiento local de cada teléfono</td></tr>
+  <tr><td>Fotos, videos y notas de voz que envían</td><td>Mostrarlos en el chat, la pizarra y las notas</td><td>Cifrados en el Google Drive de la cuenta que ustedes conecten</td></tr>
+  <tr><td>Correo de la cuenta de Google conectada</td><td>Mostrar en Ajustes qué cuenta de Drive está conectada</td><td>Solo en el teléfono</td></tr>
+  <tr><td>Nombre, estado y foto de perfil que ustedes eligen</td><td>Mostrarlos a la otra persona del chat</td><td>Cifrados, igual que los mensajes</td></tr>
+  <tr><td>Código de invitación e identificador del chat</td><td>Conectar los dos teléfonos</td><td>Supabase y los teléfonos</td></tr>
+</table>
+<p>Nido <b>no</b> recopila ubicación, contactos, historial de navegación, identificadores publicitarios ni datos de salud o financieros.</p>
+
+<h2>3. Uso de los datos de Google (Google Drive)</h2>
+<p>Si usted conecta una cuenta de Google, Nido solicita únicamente el permiso <code>https://www.googleapis.com/auth/drive.file</code>, que da acceso <b>solo a los archivos creados por la propia app</b>. Con él Nido:</p>
+<ul>
+  <li>crea una carpeta de Nido y sube ahí fotos, videos, notas de voz y respaldos, siempre cifrados;</li>
+  <li>descarga esos mismos archivos para mostrarlos en la app;</li>
+  <li>borra de Drive los archivos que ustedes eliminan en la app;</li>
+  <li>consulta el espacio disponible para avisarles cuando el Drive se está llenando.</li>
+</ul>
+<p>Nido no lee, no analiza y no comparte ningún otro archivo de su Drive. Los datos obtenidos de Google no se usan para publicidad, no se venden, no se transfieren a terceros y no se usan para entrenar modelos de inteligencia artificial.</p>
+<p><b>El uso y la transferencia a cualquier otra app de la información recibida de las API de Google por parte de Nido se ajustarán a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos del usuario de los servicios de las API de Google</a>, incluidos los requisitos de Uso Limitado.</b></p>
+<p>Puede quitarle el acceso a Nido en cualquier momento desde la app (Ajustes › Desconectar Drive) o desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>4. Servicios de terceros</h2>
+<ul>
+  <li><b>Supabase</b> (Supabase Inc.): aloja el contenido cifrado y hace posible la sincronización y los avisos en tiempo real. Supabase solo ve datos cifrados. <a href="https://supabase.com/privacy">Política de privacidad de Supabase</a>.</li>
+  <li><b>Google Drive</b> (Google LLC): almacena los archivos cifrados en la cuenta que ustedes conecten. <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</li>
+  <li><b>GIPHY</b>: solo si usan la búsqueda de GIF. Las palabras que buscan se envían a GIPHY y los GIF se cargan desde sus servidores. <a href="https://support.giphy.com/hc/en-us/articles/360032872931">Política de privacidad de GIPHY</a>.</li>
+  <li><b>Sitios enlazados</b>: cuando alguien envía un enlace, la app puede consultar esa página para mostrar su título e imagen de vista previa, igual que haría un navegador.</li>
+</ul>
+
+<h2>5. Permisos del teléfono</h2>
+<ul>
+  <li><b>Notificaciones</b> y <b>servicio en segundo plano</b>: para avisar de mensajes nuevos, recordatorios y de la mascota.</li>
+  <li><b>Micrófono</b>: solo al grabar una nota de voz.</li>
+  <li><b>Fotos, videos y archivos</b>: solo lo que usted elige enviar o compartir con Nido desde otra app.</li>
+  <li><b>Huella digital</b>: opcional, para desbloquear la app. La verificación la hace Android; Nido nunca recibe ni guarda su huella.</li>
+</ul>
+
+<h2>6. Seguridad</h2>
+<p>El contenido se cifra en el teléfono con AES-GCM de 256 bits antes de enviarse. La llave se genera en el teléfono y solo se comparte con la otra persona mediante el código de invitación. La app puede protegerse con PIN o huella, y las notificaciones pueden ocultar el texto con el teléfono bloqueado.</p>
+
+<h2>7. Conservación y borrado</h2>
+<ul>
+  <li>Los mensajes borrados en la app se borran para los dos, y sus archivos se eliminan de Drive si ya no se usan en otro lugar. Los mensajes temporales se borran solos al vencer.</li>
+  <li>Desinstalar la app borra los datos guardados en ese teléfono.</li>
+  <li>Los archivos en su Google Drive le pertenecen y puede borrarlos cuando quiera desde Drive.</li>
+  <li>Para borrar todo el contenido cifrado de su chat en Supabase, escriba a <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a> desde cualquiera de los dos teléfonos indicando que desea eliminarlo. Se borrará en un plazo máximo de 30 días.</li>
+</ul>
+
+<h2>8. Menores de edad</h2>
+<p>Nido no está dirigida a menores de 13 años y no recopila a sabiendas información de ellos.</p>
+
+<h2>9. Sus derechos</h2>
+<p>Puede solicitar acceso, corrección, cancelación u oposición al tratamiento de sus datos (derechos ARCO, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares de México) escribiendo a <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a>.</p>
+
+<h2>10. Cambios a esta política</h2>
+<p>Si esta política cambia, se publicará aquí con una nueva fecha de actualización.</p>
+
+</main>
+<footer>
+  Nido · Aplicación para Android · Contacto: <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a><br>
+  <a href="index.html">Inicio</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="terminos.html">Condiciones del servicio</a>
+</footer>
+</body>
+</html>

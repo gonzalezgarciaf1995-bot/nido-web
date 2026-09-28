@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nido · Chat privado para dos</title>
+<meta name="description" content="Nido: un chat privado y cifrado para dos personas, con una mascota virtual que crían juntos.">
+<link rel="icon" href="favicon-192.png">
+<style>
+  :root{--bg:#140e1c;--panel:#1f1530;--line:#3d2d52;--ink:#efe6fa;--muted:#b3a4c8;--gold:#d9b35c;--link:#c9a8ff}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(120% 60% at 50% 0,#2a1b3d 0,var(--bg) 70%) fixed;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{max-width:760px;margin:0 auto;padding:28px 20px 8px;display:flex;align-items:center;gap:14px}
+  header img{width:56px;height:56px;border-radius:14px;image-rendering:pixelated}
+  header a{color:var(--ink);text-decoration:none;font-weight:800;font-size:22px}
+  nav{margin-left:auto;display:flex;gap:14px;font-size:14px}
+  nav a{color:var(--muted);font-weight:600;font-size:14px}
+  main{max-width:760px;margin:0 auto;padding:8px 20px 40px}
+  h1{font-size:30px;line-height:1.2;margin:18px 0 6px;color:var(--gold)}
+  h2{font-size:20px;margin:30px 0 8px}
+  p,li{color:var(--ink)}
+  .muted{color:var(--muted);font-size:14px}
+  a{color:var(--link)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{text-align:left;vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--gold);font-weight:700}
+  .hero{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .hero img{width:150px;height:150px;border-radius:32px;image-rendering:pixelated;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  .hero div{flex:1;min-width:240px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  footer{max-width:760px;margin:0 auto;padding:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo-120.png" alt="Ícono de Nido" width="56" height="56">
+  <a href="index.html">Nido</a>
+  <nav><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></nav>
+</header>
+<main>
+
+<section class="hero">
+  <img src="icono-512.png" alt="Ícono de Nido: un nido con un huevo" width="150" height="150">
+  <div>
+    <h1>Nido</h1>
+    <p><b>Un chat privado y cifrado para dos personas</b>, con una mascota virtual que crían juntos.</p>
+    <p class="muted">Aplicación para Android. Proyecto personal, sin anuncios y sin fines comerciales.</p>
+  </div>
+</section>
+
+<h2>¿Qué es Nido?</h2>
+<p>Nido es una aplicación de mensajería pensada para una pareja: solo dos personas se conectan entre sí con un código de invitación. Todo lo que se escriben se cifra en el propio teléfono antes de salir, de modo que ni el servidor ni el desarrollador pueden leerlo.</p>
+
+<div class="grid">
+  <div class="card"><b>💬 Chat cifrado</b><br><span class="muted">Mensajes, notas de voz, fotos, videos, stickers, GIF, encuestas y mensajes programados o temporales.</span></div>
+  <div class="card"><b>📌 Pizarras y recuerdos</b><br><span class="muted">Una pizarra de corcho por día para pegar fotos y notas, calendario, listas compartidas y resúmenes del mes.</span></div>
+  <div class="card"><b>🐙 Mascota compartida</b><br><span class="muted">Un pequeño Primigenio en pixel art que crece con los días en que los dos platican, con minijuegos y objetos para desbloquear.</span></div>
+  <div class="card"><b>☁️ Tus fotos en tu Drive</b><br><span class="muted">Las fotos y videos se guardan cifrados en su propio Google Drive, no en servidores del desarrollador.</span></div>
+</div>
+
+<h2>¿Por qué pide acceso a Google Drive?</h2>
+<p>Nido usa el permiso <b>«Ver, editar, crear y borrar solo los archivos de Google Drive que usas con esta app»</b> (<code>drive.file</code>). Con él guarda en su Drive las fotos, videos y notas de voz del chat, siempre cifrados, y los descarga para mostrarlos. <b>Nido no puede ver ningún otro archivo de su Drive</b>: solo los que la propia app creó. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p>
+
+<h2>Contacto</h2>
+<p>Para dudas, soporte o para pedir que se borren sus datos, escriba a <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a>.</p>
+
+</main>
+<footer>
+  Nido · Aplicación para Android · Contacto: <a href="mailto:nido.fer.ale@gmail.com">nido.fer.ale@gmail.com</a><br>
+  <a href="index.html">Inicio</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="terminos.html">Condiciones del servicio</a>
+</footer>
+</body>
+</html>

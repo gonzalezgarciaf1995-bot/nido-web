@@ -1,0 +1,12 @@
+PÁGINAS DE NIDO — Cloudflare Pages
+
+Sube TODOS estos archivos a la raíz de un repositorio de GitHub (index.html debe quedar en la raíz).
+
+Direcciones finales (con el subdominio nido.contrapeso.com.mx):
+- Página principal:        https://nido.contrapeso.com.mx/
+- Política de privacidad:  https://nido.contrapeso.com.mx/privacidad.html
+- Condiciones del servicio: https://nido.contrapeso.com.mx/terminos.html
+
+Formulario de Google (pantalla de consentimiento de OAuth):
+- Logotipo: logo-120.png
+- Dominio autorizado: contrapeso.com.mx
